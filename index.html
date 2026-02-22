@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src * data: blob:;
+    script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;
+    style-src * 'unsafe-inline' data:;
+    img-src * data:;
+    connect-src * data: blob:;
+    frame-src * data:;
+    font-src * data:;
+">
     <title>CHART MASTER | Терминал трейдера</title>
     
     <!-- Supabase подключение -->
@@ -6756,4 +6765,5 @@
 </body>
 
 </html>
+
 
